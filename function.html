@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>function</title>
+	<style>
+		*{
+			color:blue;
+			font-size:26px;
+			margin:10px 50px;
+			line-height:50px;
+		}
+	</style>
+</head>
+<body>
+	<script>
+		//gobal function
+		
+		var a= 22; b=44; c= 10;
+		var d=a+b+c;
+		function add(){
+			document.write(d);
+			document.write("<br>");
+		}
+		add();
+		
+		//local function value and condition inside a function
+		
+		function sub(){
+			let a=3; b=4; c=5;
+			let d=a-b-c;
+			document.write(d);
+			document.write("<br>");
+		}
+		sub();
+		
+		//local function return value
+		
+		function mut(){
+			let a=37; b=94; c=15;
+			let d=a*b*c;
+			return d;
+		}
+		let e=mut();
+		document.write(e);
+		document.write("<br>");
+		
+		//function argument condition after outside function value
+		
+		function div(a,b,c){
+			let d=a/b/c;
+			document.write(d);
+			document.write("<br>");
+		}
+		div(90,9,2); //value
+		div(234,9,2);
+		div(800,8,2);
+		
+		//function expression 
+		
+		let mat=function jok(){
+			let a=37; b=94; c=15;
+			let d=a+b*c;
+			document.write(d);
+			document.write("<br>");
+		}
+		mat();   //declare the let  variable name
+
+		//function anonymous no function name 
+		
+		let sut=function(){
+			let a=27; b=84; c=12;
+			let d=a+b-c;
+			document.write(d);
+			document.write("<br>");
+		}
+		sut();   //declare the let  variable name
+    </script>
+	
+</body>
+</html>  
